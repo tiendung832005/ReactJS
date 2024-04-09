@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let acc = [
+            {
+                name: "minh",
+                password: "123",
+                address: "hà nội",
+            },
+            {
+                name: "minh",
+                password: "123",
+                address: "hcm",
+            },
+            {
+                name: "minh",
+                password: "123",
+                address: "ninh bình",
+            },
+        ];
+        let result = acc.some((item,index,arr)=>{
+            return item.address === "ninh bình";
+        })
+        if(result===true){
+            console.log("Có người ở ninh bình");
+        }else{
+            console.log("Kcó người ở ninh bình");
+
+        }
+    </script>
+</body>
+</html>

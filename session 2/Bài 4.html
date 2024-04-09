@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // số nguyên a là 2
+        let allNumbersDivisibleBy = [2,4,6,8,10]
+        let result = allNumbersDivisibleBy.every((item,index,arr)=>{
+            return item % 2 === 0;
+        })
+        console.log(result);
+
+        let allNumbersDivisibleBy1 = [2,4,6,8,11]
+        let result1 = allNumbersDivisibleBy1.every((item,index,arr)=>{
+            return item % 2 === 0;
+        })
+        console.log(result1);
+    </script>
+</body>
+</html>

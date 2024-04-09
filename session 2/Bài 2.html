@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let hasUppercase = ["Hello"];
+        let result = hasUppercase.every((item,index,arr)=>{
+            if (item >= 'A' && item <= 'Z') {
+                return true;
+            }
+        })
+        console.log(result);
+
+
+        let hasUppercase1 = ["hello"];
+        let result1 = hasUppercase1.every((item,index,arr)=>{
+            if (item >= 'A' && item <= 'Z') {
+                return false;
+            }
+        })
+        console.log(result1);
+    </script>
+</body>
+</html>

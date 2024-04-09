@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let users = [
+        {
+          password: "123",
+          userName: "minh thu",
+        },
+        {
+          password: "8888 8888",
+          userName: "hồng vân",
+        },
+        {
+          password: "68686868",
+          userName: "thảo phưn",
+        },
+      ];
+      let result = users.findIndex((item,index,arr)=>{
+        return item.password.includes(" ");
+      });
+      if(result != -1){
+        console.log("Vị trí là: ", result);
+      }else{
+        console.log("Mọi tài khoản hợp lệ");
+      }
+    </script>
+</body>
+</html>

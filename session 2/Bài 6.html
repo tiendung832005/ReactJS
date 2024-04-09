@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let sum = [1,2,3,4,5,6];
+        let result = sum.reduce((accumulator, currentValue,arr)=>{
+            return accumulator + currentValue
+        },0)
+        console.log(result);
+        let sum1 = [1,2,3,4,5,6];
+        let a = 0;
+        for(let i=0;i<sum1.length;i++){
+            a = a + sum1[i];
+        }
+        console.log(a);
+    </script>
+</body>
+</html>
