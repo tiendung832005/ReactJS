@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        class: dùng để khởi tạo đối tượng
+     -->
+     <script>
+        // khởi tạo 1 đối tượng sinh viên
+        class students {
+            constructor(name,age,id){
+                this.name=name;
+                this.age=age;
+                this.id=id
+            }
+        }
+        let std1 = new students("minh",20,1)
+        let std2 = new students("lan",5,2)
+
+        console.log("std1", std1);
+        console.log("std2", std2);
+
+     </script>
+</body>
+</html>
