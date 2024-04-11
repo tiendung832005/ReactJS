@@ -1,0 +1,12 @@
+"use strict";
+let x = 1;
+let y = 2;
+let result;
+result = x + y;
+console.log("Kết quả là: ", result);
+result = x - y;
+console.log("Kết quả là: ", result);
+result = x * y;
+console.log("Kết quả là: ", result);
+result = x / y;
+console.log("Kết quả là: ", result);
