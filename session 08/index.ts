@@ -32,3 +32,26 @@ let objj1:C={
     phone: "55555",
     email: "hong@gmail.com"
 }
+
+let std={
+    age: 18,
+    address: "sơn la"
+};
+console.log(1111,(std));
+
+let c1 = {
+    name: 1,
+    age: 18,
+    address: "sơn la"
+}
+console.log(22222222,(c1));
+// alias
+let userName1:string|number; //đây là union
+
+type user = string|number;  // kiểu alias(bí danh)
+
+// tuple
+let array:(number|string)[]=["hoa", "minh"];
+let array1:[number,string];
+array1=[2,"2"];
+array1.push(6);

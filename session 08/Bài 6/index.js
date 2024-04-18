@@ -1,13 +1,6 @@
 "use strict";
-function testString(a) {
-    if (typeof a === "string") {
-        console.log(a);
-    }
-    else if (Array.isArray(a)) {
-        a.forEach((item) => {
-            console.log("11111111", item);
-        });
-    }
+function printStatusCode(code) {
+    console.log(`My status code is ${code}.`);
 }
-testString('Hello, PTIT!');
-testString(['dũng', 'phong', 'đức']);
+printStatusCode(404);
+printStatusCode(`404`);
