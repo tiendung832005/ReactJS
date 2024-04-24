@@ -17,6 +17,4 @@ function calculateArea(shape) {
     }
 }
 let square = { kind: "square", sideLength: 2 };
-let circle = { kind: "circle", radius: 4 };
 console.log("Diện tích của hình vuông: ", calculateArea(square));
-console.log("Diện tích của hình tròn: ", calculateArea(circle));
