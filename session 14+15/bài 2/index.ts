@@ -22,7 +22,6 @@ class CartProduct extends Product2 {
     calculatePrice(): number {
         return this.price * this.quantity;
     }
-
     increaseQuantity(): void {
         this.quantity++;
     }
@@ -87,7 +86,7 @@ class Cart {
 const products: ShopProduct[] = [
     new ShopProduct(1, "iPhone11", 1000, 10),
     new ShopProduct(2, "Samsung S20 Ultra", 800, 15),
-    new ShopProduct(3, "iphone 15", 900, 20)
+    new ShopProduct(3, "iphone 15", 900, 20),
 ];
 
 const cart = new Cart();

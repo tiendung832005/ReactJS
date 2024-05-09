@@ -10,56 +10,65 @@ class Student5 {
         console.log(`${this.name} đã đăng ký học`);
     }
 }
+// class hướng dẫn
 class Instructor {
     constructor(id, name) {
         this.id = id;
         this.name = name;
     }
-    createCourse(title) {
-        return new Course(title, this);
+    createCourse(id, title) {
+        return new Course(1, title, this);
     }
-    createLesson(title) {
-        return new Lesson(title);
+    createLesson(id, title) {
+        return new Lesson(10, title);
     }
-    createAssignment(title) {
-        return new Assignment(title);
+    createAssignment(id, title) {
+        return new Assignment(3, title);
     }
-    createAssessment(title) {
-        return new Assessment(title);
+    createAssessment(id, title) {
+        return new Assessment(1, title);
     }
 }
+// tạo class khóa học
 class Course {
-    constructor(title, instructor) {
+    constructor(id, title, instructor) {
+        this.id = id;
         this.title = title;
         this.instructor = instructor;
         this.lessons = [];
         this.assessments = [];
     }
 }
+// tạo class tiết học
 class Lesson {
-    constructor(title) {
+    constructor(id, title) {
+        this.id = id;
         this.title = title;
         this.assignments = [];
     }
 }
+// tạo class bài tập
 class Assignment {
-    constructor(title) {
+    constructor(id, title) {
+        this.id = id;
         this.title = title;
     }
 }
+// tạo class bài ktra
 class Assessment {
-    constructor(title) {
+    constructor(id, title) {
+        this.id = id;
         this.title = title;
     }
 }
 const instructor = new Instructor(1, "Dũng");
-const course = instructor.createCourse("ReactJS");
-const lesson1 = instructor.createLesson("Abstract Class");
-const lesson2 = instructor.createLesson("Interface");
-const assignment = instructor.createAssignment("Bài tập session 1");
-const assessment = instructor.createAssessment("Hackathon 1");
+const course = instructor.createCourse(1, "ReactJS");
+const lesson1 = instructor.createLesson(2, "Abstract Class");
+const lesson2 = instructor.createLesson(2, "Interface");
+const assignment = instructor.createAssignment(10, "Bài tập session 1");
+const assessment = instructor.createAssessment(1, "Hackathon 1");
 course.lessons.push(lesson1, lesson2);
 lesson1.assignments.push(assignment);
 course.assessments.push(assessment);
-const student5 = new Student5(101, "Alice");
+const student5 = new Student5(101, "DŨng");
 student5.enroll(course);

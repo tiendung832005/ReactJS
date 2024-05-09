@@ -14,7 +14,7 @@ class Student5 {
         console.log(`${this.name} đã đăng ký học`);
     }
 }
-
+// class hướng dẫn
 class Instructor {
     id: number;
     name: string;
@@ -23,74 +23,82 @@ class Instructor {
         this.id = id;
         this.name = name;
     }
-
-    createCourse(title: string): Course {
-        return new Course(title, this);
+    createCourse(id: number, title: string): Course {
+        return new Course(1,title, this);
     }
 
-    createLesson(title: string): Lesson {
-        return new Lesson(title);
+    createLesson(id: number, title: string): Lesson {
+        return new Lesson(10, title);
     }
 
-    createAssignment(title: string): Assignment {
-        return new Assignment(title);
+    createAssignment(id: number,title: string): Assignment {
+        return new Assignment(3,title);
     }
 
-    createAssessment(title: string): Assessment {
-        return new Assessment(title);
+    createAssessment(id: number, title: string): Assessment {
+        return new Assessment(1,title);
     }
 }
-
+// tạo class khóa học
 class Course {
+    id:number;
     title: string;
     instructor: Instructor;
     lessons: Lesson[];
     assessments: Assessment[];
 
-    constructor(title: string, instructor: Instructor, ) {
+    constructor(id:number,title: string, instructor: Instructor, ) {
+        this.id=id;
         this.title = title;
         this.instructor = instructor;
         this.lessons = [];
         this.assessments = [];
     }
 }
-
+// tạo class tiết học
 class Lesson {
+    id: number
     title: string;
     assignments: Assignment[];
 
-    constructor(title: string,) {
+    constructor(id: number, title: string,) {
+        this.id=id;
         this.title = title;
         this.assignments = [];
     }
 }
-
+// tạo class bài tập
 class Assignment {
+    id: number;
     title: string;
 
-    constructor(title: string) {
+    constructor(id: number, title: string) {
+        this.id=id
         this.title = title;
+
     }
 }
-
+// tạo class bài ktra
 class Assessment {
+    id: number;
     title: string;
 
-    constructor(title: string) {
+    constructor(id: number, title: string) {
+        this.id=id;
         this.title = title;
     }
 }
 
 const instructor = new Instructor(1, "Dũng");
-const course = instructor.createCourse("ReactJS");
-const lesson1 = instructor.createLesson("Abstract Class");
-const lesson2 = instructor.createLesson("Interface");
-const assignment = instructor.createAssignment("Bài tập session 1");
-const assessment = instructor.createAssessment("Hackathon 1" );
+const course = instructor.createCourse(1,"ReactJS");
+const lesson1 = instructor.createLesson(2,"Abstract Class");
+const lesson2 = instructor.createLesson(2,"Interface");
+const assignment = instructor.createAssignment(10,"Bài tập session 1");
+const assessment = instructor.createAssessment(1,"Hackathon 1" );
 
 course.lessons.push(lesson1, lesson2);
 lesson1.assignments.push(assignment);
 course.assessments.push(assessment);
 
-const student5 = new Student5 (101, "Alice");
+const student5 = new Student5 (101, "DŨng");
 student5.enroll(course);
