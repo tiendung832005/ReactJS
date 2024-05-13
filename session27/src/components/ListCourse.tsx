@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default function B2() {
-  let subjects = ["HTML", "CSS", "JavaScript", "ReactJS"]
+  let subjects: string[] = ["HTML", "CSS", "JavaScript", "ReactJS"];
   return (
     <div>
       Bài 1
