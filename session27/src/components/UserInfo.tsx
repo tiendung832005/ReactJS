@@ -1,6 +1,11 @@
-
 import React from 'react'
-
+interface User{
+  fullname: string,
+  gen: string,
+  date: string,
+  email: string,
+  address: string,
+}
 export default function userInfo() {
   const userInfo = {
     fullname: "Nguyễn Văn A",
