@@ -16,12 +16,16 @@ const obj={
 }
 export default function Products(props: Props) {
     // dùng destructoring
-    const {products, a} = props
-    const {name,age,address}=obj;
+    const {products} = props;
     
   return (
     <div>
-        <Product></Product>
+        <ul>
+            {products.map((item, index,arr)=>{
+                return <Product product={item}></Product>
+            })}
+        </ul>
+        
     </div>
   )
 }

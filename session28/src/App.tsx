@@ -5,6 +5,7 @@ import Products from './components/Products';
 export default function App() {
   let fullName: string="hoa";
   let age: number=20;
+  let a: number=5
   let Products=[
     {
       name: "iphone15",
@@ -30,12 +31,9 @@ export default function App() {
         - thế nào là component con?
         -  component cha chứa component con
       </p>
-      <p>state
-        - 
-      </p>
 
       <Parent a={fullName} b={age} ></Parent>
-      <Products></Products>
+      
     </div>
   )
 }
