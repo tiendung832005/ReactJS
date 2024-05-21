@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './App.css';
+
 export default function Bai2() {
     const [color, setColor] = useState<string>("")
     const [displayColor, setDisplayColor] = useState<string>("");

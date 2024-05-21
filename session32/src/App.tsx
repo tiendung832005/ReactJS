@@ -7,6 +7,9 @@ import Bai3 from './components/Bai3';
 import Bai4 from './components/Bai4';
 import Bai5 from './components/Bai5';
 import Bai6 from './components/Bai6';
+import FormAdvanced from './components/FormAdvanced';
+import TextArea from './components/TextArea';
+import SelectOption from './components/SelectOption';
 
 export default function App() {
   setTimeout(() => {
@@ -24,12 +27,19 @@ export default function App() {
     <div>
       <button onClick={handleClick}>DỪng</button>
       <Form></Form>
-      <Bai1></Bai1>
+      {/* <Bai1></Bai1>
       <Bai2></Bai2>
       <Bai3></Bai3>
       <Bai4></Bai4>
       <Bai5></Bai5>
-      <Bai6></Bai6>
+      <Bai6></Bai6> */}
+      <FormAdvanced></FormAdvanced>
+      <p>**************************************************</p>
+      <TextArea></TextArea>
+      <p>**************************************************</p>
+      <SelectOption></SelectOption>
+      <p>**************************************************</p>
+
     </div>
   )
 }
