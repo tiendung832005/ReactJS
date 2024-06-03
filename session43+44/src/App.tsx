@@ -7,11 +7,11 @@ import ReactBoostrap from './components/ReactBoostrap.tsx'
 export default function App() {
   return (
     <div>
-      App
+      
       {/* <Header></Header> */}
-      {/* <Main></Main> */}
-      <Login></Login>
-      <ReactBoostrap></ReactBoostrap>
+      <Main></Main>
+      {/* <Login></Login> */}
+      {/* <ReactBoostrap></ReactBoostrap> */}
     </div>
   )
 }
