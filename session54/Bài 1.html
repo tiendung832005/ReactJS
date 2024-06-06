@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const calculateBMI = (weight, height) => {
+    try {
+        if (typeof weight !== 'number' || typeof height !== 'number' || Number.isNaN(weight) || Number.isNaN(height)) {
+            throw new Error('Kiểu dữ liệu không hợp lệ');
+        }
+        
+        if (weight <= 0 || height <= 0) {
+            throw new Error('Cân nặng hoặc chiều cao không hợp lệ');
+        }
+
+        return weight / (height * height);
+    } catch (error) {
+        return error.message;
+    }
+}
+console.log(calculateBMI(70, 1.75));   
+console.log(calculateBMI("70", 1.75)); 
+console.log(calculateBMI(70, -1.75)); 
+    </script>
+</body>
+</html>
