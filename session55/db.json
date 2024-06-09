@@ -1,0 +1,69 @@
+{
+    "posts":[
+        {
+            "id": 1,
+            "title": "Đi chơi",
+            "content": "Đi chơi ngày cuối tuần",
+            "thumbnail": "img1.jpg",
+            "created_at": "06/09/2024",
+            "created_by": "Hoa",
+            "comments": []
+        },
+        {
+            "id": 2,
+            "title": "Đi chơi biển",
+            "content": "Đi chơi biển mùa hè",
+            "thumbnail": "img2.jpg",
+            "created_at": "06/06/2024",
+            "created_by": "My",
+            "comments": []
+        },
+        {
+            "id": 3,
+            "title": "Đi học",
+            "content": "Đi học ngày đầu tuần",
+            "thumbnail": "img3.jpg",
+            "created_at": "10/06/2024",
+            "created_by": "Nam",
+            "comments": []
+        },
+        {
+            "id": 4,
+            "title": "Khai giảng",
+            "content": "Khai giảng năm học mới",
+            "thumbnail": "img4.jpg",
+            "created_at": "05/09/2024",
+            "created_by": "Trúc",
+            "comments": []
+        },
+        {
+            "id": 5,
+            "title": "Deadline",
+            "content": "Hôm nay làm thêm giờ",
+            "thumbnail": "img5.jpg",
+            "created_at": "09/09/2024",
+            "created_by": "Đức",
+            "comments": []
+        }
+    ],
+    "comment": [
+        {
+            "id": 1,
+            "content": "Chúc mừng sinh nhật",
+            "created_at": "02/03/2024",
+            "created_by": "Nhân"
+        },
+        {
+            "id": 2,
+            "content": "Đẹp lắm",
+            "created_at": "01/10/2024",
+            "created_by": "Hoài"
+        },
+        {
+            "id": 3,
+            "content": "Chơi hay quá!",
+            "created_at": "10/10/2023",
+            "created_by": "Thu"
+        }
+    ]
+}
