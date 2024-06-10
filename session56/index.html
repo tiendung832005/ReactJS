@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React + TS</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- 
+      1. db.json giúp tạo ra FAKE_API hoặc MOCK_API
+        + 2 team frontend và backend
+        + người làm backend sẽ viết ra những API cho lập trình viên frontend gọi lên
+        những API này để tương tác với datebase để lấy dữ liệu
+        + vấn đề người làm backend chưa kịp viết API thì người frontend sẽ đi tạo ra
+        những FAKE_API(MOCK_API) để tương tác với dữ liệu
+      2. Dùng postman để đi test các API
+        1. Các phương thức làm việc chính
+        2. POST: thêm mới dữ liệu
+          - dùng phương thức post
+          http://localhost:8080/user
+          tiếp vào body
+          chọn urllencoded
+          nhập các key và value rồi SEND
+        3. DELETE: xóa dữ liệu (xóa bản ghi)
+         - khi xóa 1 bản ghi thì phải biết xóa bản ghi nào
+        4. PUT/PATCH: cập nhật bản ghi
+          Phương thức PUT: cập nhật toàn bộ
+          Phương thức PATCH: cập nhật 1 số thuộc tính
+        5. Sắp xếp các bản ghi theo điều kiện
+          1. Sắp xếp theo tăng dần asc (ascending)
+          => http://localhost:8080/user?_sort=name&_order=asc
+          2. Sắp xếp theo giảm dần desc (descending)
+          => http://localhost:8080/user?_sort=name&_order=desc
+      Tại sao ko test các API qua url trình duyệt tại vì url chỉ test dc phương thức get thôi.
+    -->
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
