@@ -1,0 +1,28 @@
+{
+    "user":[
+        {
+            "id": 1,
+            "name": "minh thu",
+            "address": "hà nội",
+            "phone": "098321314",
+            "email": "minhthu@gmail.com",
+            "status": true
+        },
+        {
+            "id": 2,
+            "name": "minh ha",
+            "address": "hcm",
+            "phone": "0932142114",
+            "email": "minhthu@gmail.com",
+            "status": true
+        },
+        {
+            "id": 3,
+            "name": "minh hang" ,
+            "address": "nha trang",
+            "phone": "0933212114",
+            "email": "minhthu@gmail.com",
+            "status": true
+        }
+    ]
+}
