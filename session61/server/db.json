@@ -1,0 +1,40 @@
+{
+    "users":[
+        {
+            "id":1,
+            "name":"minhthu",
+            "age":20
+        },
+        {
+            "id":2,
+            "name":"minhthu2",
+            "age":20
+        }
+    ],
+    "jobs":[
+        {
+            "id":1,
+            "name": "code"
+        },
+        {
+            "id":2,
+            "name": "quét nhà"
+        },
+        {
+            "id": 3,
+            "name": "rửa bát"
+        },
+        {
+            "id": 4,
+            "name": "lau nhà"
+        },
+        {
+            "id": 5,
+            "name": "giặt quần áo"
+        },
+        {
+            "id": 6,
+            "name": "học bài"
+        }
+    ]
+}
