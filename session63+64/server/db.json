@@ -1,0 +1,11 @@
+{
+    "posts":[
+        {
+            "id": 1,
+            "name": "bài 1",
+            "image": "",
+            "date":"",
+            "status": true
+        }
+    ]
+}
