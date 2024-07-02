@@ -1,4 +1,3 @@
-
 import { useDispatch, useSelector } from 'react-redux';
 import { toggleView } from '../store/reducers/displaySlice';
 import "./display.css"

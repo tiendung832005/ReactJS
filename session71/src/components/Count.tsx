@@ -16,7 +16,7 @@ export default function Count() {
         <p> Giá trị biến count</p>
         <button onClick={increaseCount}>Tăng</button>
         <button>giảm</button>
-
+        <button>Tang</button>
     </div>
   )
 }
